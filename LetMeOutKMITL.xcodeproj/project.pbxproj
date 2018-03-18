@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		957BA3275AB2AEEE6A605F0D /* Pods_LetMeOutKMITL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E81B87B9DC23999E39327D /* Pods_LetMeOutKMITL.framework */; };
+		FC0AAC2F205E804D0039E80B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0AAC2E205E804D0039E80B /* LoginViewController.swift */; };
+		FC0AAC31205E9EF80039E80B /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0AAC30205E9EF80039E80B /* MainController.swift */; };
+		FC0AAC34205EB3A10039E80B /* UserSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0AAC33205EB3A10039E80B /* UserSP.swift */; };
 		FCF31A38205D88D9002A01FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF31A37205D88D9002A01FC /* AppDelegate.swift */; };
 		FCF31A3A205D88D9002A01FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF31A39205D88D9002A01FC /* ViewController.swift */; };
 		FCF31A3D205D88D9002A01FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF31A3B205D88D9002A01FC /* Main.storyboard */; };
@@ -20,6 +23,9 @@
 		8C38E74DC7CE9A90125D22BB /* Pods-LetMeOutKMITL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetMeOutKMITL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LetMeOutKMITL/Pods-LetMeOutKMITL.debug.xcconfig"; sourceTree = "<group>"; };
 		A9E81B87B9DC23999E39327D /* Pods_LetMeOutKMITL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetMeOutKMITL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA05254601CE4807F40998AE /* Pods-LetMeOutKMITL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetMeOutKMITL.release.xcconfig"; path = "Pods/Target Support Files/Pods-LetMeOutKMITL/Pods-LetMeOutKMITL.release.xcconfig"; sourceTree = "<group>"; };
+		FC0AAC2E205E804D0039E80B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FC0AAC30205E9EF80039E80B /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		FC0AAC33205EB3A10039E80B /* UserSP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSP.swift; sourceTree = "<group>"; };
 		FCF31A34205D88D9002A01FC /* LetMeOutKMITL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetMeOutKMITL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF31A37205D88D9002A01FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCF31A39205D88D9002A01FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +93,9 @@
 				FCF31A40205D88D9002A01FC /* LaunchScreen.storyboard */,
 				FCF31A43205D88D9002A01FC /* Info.plist */,
 				FCF31A49205D950E002A01FC /* GoogleService-Info.plist */,
+				FC0AAC2E205E804D0039E80B /* LoginViewController.swift */,
+				FC0AAC30205E9EF80039E80B /* MainController.swift */,
+				FC0AAC33205EB3A10039E80B /* UserSP.swift */,
 			);
 			path = LetMeOutKMITL;
 			sourceTree = "<group>";
@@ -169,9 +178,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LetMeOutKMITL/Pods-LetMeOutKMITL-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -185,11 +197,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LetMeOutKMITL/Pods-LetMeOutKMITL-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -223,6 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0AAC31205E9EF80039E80B /* MainController.swift in Sources */,
+				FC0AAC2F205E804D0039E80B /* LoginViewController.swift in Sources */,
+				FC0AAC34205EB3A10039E80B /* UserSP.swift in Sources */,
 				FCF31A3A205D88D9002A01FC /* ViewController.swift in Sources */,
 				FCF31A38205D88D9002A01FC /* AppDelegate.swift in Sources */,
 			);

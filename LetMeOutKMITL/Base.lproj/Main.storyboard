@@ -17,7 +17,19 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcr-68-qcK">
+                                <rect key="frame" x="168.5" y="323" width="38.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zcr-68-qcK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M3L-hN-Bp0"/>
+                            <constraint firstItem="Zcr-68-qcK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="R18-vb-L9Z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="SCAN" id="i4H-AJ-Xd9"/>
@@ -33,7 +45,19 @@
                     <view key="view" contentMode="scaleToFill" id="rX8-cc-WPu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khy-tZ-d5L">
+                                <rect key="frame" x="172" y="323" width="31.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="khy-tZ-d5L" firstAttribute="centerX" secondItem="rX8-cc-WPu" secondAttribute="centerX" id="ACO-j2-Lro"/>
+                            <constraint firstItem="khy-tZ-d5L" firstAttribute="centerY" secondItem="rX8-cc-WPu" secondAttribute="centerY" id="yQ9-uh-BGs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jID-Xn-Ice"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="GENERATE" id="Izk-pZ-DSB"/>
@@ -42,27 +66,43 @@
             </objects>
             <point key="canvasLocation" x="684" y="887"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="6wr-YR-1fp">
             <objects>
-                <viewController id="O7T-BY-N5q" sceneMemberID="viewController">
+                <viewController id="O7T-BY-N5q" customClass="LoginViewController" customModule="LetMeOutKMITL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pk5-ge-BLS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdO-bw-Ez0" customClass="GIDSignInButton">
+                                <rect key="frame" x="83" y="542" width="240" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="EQF-rZ-z07"/>
+                                    <constraint firstAttribute="width" constant="240" id="u0C-8Q-3Zo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MtW-JS-95C" firstAttribute="bottom" secondItem="TdO-bw-Ez0" secondAttribute="bottom" constant="61" id="F3D-o3-i5f"/>
+                            <constraint firstItem="MtW-JS-95C" firstAttribute="trailing" secondItem="TdO-bw-Ez0" secondAttribute="trailing" constant="52" id="L1c-WC-4ZM"/>
+                            <constraint firstItem="TdO-bw-Ez0" firstAttribute="leading" secondItem="MtW-JS-95C" secondAttribute="leading" constant="83" id="mHi-oZ-GmM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MtW-JS-95C"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpX-bj-Gkz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1036" y="116"/>
+            <point key="canvasLocation" x="-1036" y="115.59220389805098"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--MainController-->
         <scene sceneID="gkX-GQ-j9S">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="icU-se-scz" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainController" title="MainController" automaticallyAdjustsScrollViewInsets="NO" id="icU-se-scz" customClass="MainController" customModule="LetMeOutKMITL" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hNa-RL-W1R">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -83,7 +123,19 @@
                     <view key="view" contentMode="scaleToFill" id="Li5-0s-Kxh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOG-ly-6y6">
+                                <rect key="frame" x="163" y="323" width="48.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xOG-ly-6y6" firstAttribute="centerY" secondItem="Li5-0s-Kxh" secondAttribute="centerY" id="N5b-Bc-vSp"/>
+                            <constraint firstItem="xOG-ly-6y6" firstAttribute="centerX" secondItem="Li5-0s-Kxh" secondAttribute="centerX" id="ZAO-U6-Rny"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wxW-cn-0nR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="PROFILE" id="DSD-1J-1C5"/>
