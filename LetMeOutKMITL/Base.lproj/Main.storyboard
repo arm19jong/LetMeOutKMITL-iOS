@@ -41,30 +41,43 @@
         <!--GENERATE-->
         <scene sceneID="bx3-H8-UNG">
             <objects>
-                <viewController id="cp9-ab-7XO" sceneMemberID="viewController">
+                <viewController id="cp9-ab-7XO" customClass="GenQrViewController" customModule="LetMeOutKMITL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rX8-cc-WPu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khy-tZ-d5L">
-                                <rect key="frame" x="172" y="323" width="31.5" height="21"/>
+                                <rect key="frame" x="172" y="323" width="32" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="imageView" image="halo2-720.0001" translatesAutoresizingMaskIntoConstraints="NO" id="Lsm-el-X1E">
+                                <rect key="frame" x="67.5" y="53" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="X4Z-gQ-vbK"/>
+                                    <constraint firstAttribute="width" constant="240" id="yfU-5e-tkV"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Lsm-el-X1E" firstAttribute="top" secondItem="jID-Xn-Ice" secondAttribute="top" constant="33" id="29q-us-45V"/>
                             <constraint firstItem="khy-tZ-d5L" firstAttribute="centerX" secondItem="rX8-cc-WPu" secondAttribute="centerX" id="ACO-j2-Lro"/>
+                            <constraint firstItem="Lsm-el-X1E" firstAttribute="centerX" secondItem="jID-Xn-Ice" secondAttribute="centerX" id="GSD-dp-7tN"/>
+                            <constraint firstItem="Lsm-el-X1E" firstAttribute="centerX" secondItem="rX8-cc-WPu" secondAttribute="centerX" id="grn-gB-eHf"/>
                             <constraint firstItem="khy-tZ-d5L" firstAttribute="centerY" secondItem="rX8-cc-WPu" secondAttribute="centerY" id="yQ9-uh-BGs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jID-Xn-Ice"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="GENERATE" id="Izk-pZ-DSB"/>
+                    <connections>
+                        <outlet property="imageView" destination="Lsm-el-X1E" id="OJA-iu-YKr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1N-6z-wDi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="887"/>
+            <point key="canvasLocation" x="825" y="844"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="6wr-YR-1fp">
@@ -130,27 +143,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="imageView" image="halo2-720.0001" translatesAutoresizingMaskIntoConstraints="NO" id="mrD-iy-HS5">
-                                <rect key="frame" x="82" y="45" width="240" height="240"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="Ug4-Hv-hbq"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xOG-ly-6y6" firstAttribute="centerY" secondItem="Li5-0s-Kxh" secondAttribute="centerY" id="N5b-Bc-vSp"/>
                             <constraint firstItem="xOG-ly-6y6" firstAttribute="centerX" secondItem="Li5-0s-Kxh" secondAttribute="centerX" id="ZAO-U6-Rny"/>
-                            <constraint firstItem="mrD-iy-HS5" firstAttribute="top" secondItem="wxW-cn-0nR" secondAttribute="top" constant="25" id="bXI-o7-4ND"/>
-                            <constraint firstItem="mrD-iy-HS5" firstAttribute="leading" secondItem="wxW-cn-0nR" secondAttribute="leading" constant="82" id="oZH-XQ-3mH"/>
-                            <constraint firstItem="wxW-cn-0nR" firstAttribute="trailing" secondItem="mrD-iy-HS5" secondAttribute="trailing" constant="53" id="xDu-JF-zBq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wxW-cn-0nR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="PROFILE" id="DSD-1J-1C5"/>
-                    <connections>
-                        <outlet property="imageView" destination="mrD-iy-HS5" id="g6N-7F-nIr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0q-EY-gyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

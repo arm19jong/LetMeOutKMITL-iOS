@@ -12,6 +12,7 @@
 		FC0AAC31205E9EF80039E80B /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0AAC30205E9EF80039E80B /* MainController.swift */; };
 		FC0AAC34205EB3A10039E80B /* UserSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0AAC33205EB3A10039E80B /* UserSP.swift */; };
 		FC0AAC36205ECC6E0039E80B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0AAC35205ECC6E0039E80B /* ProfileViewController.swift */; };
+		FC777E422062C78C001F30D1 /* GenQrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC777E412062C78C001F30D1 /* GenQrViewController.swift */; };
 		FCF31A38205D88D9002A01FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF31A37205D88D9002A01FC /* AppDelegate.swift */; };
 		FCF31A3A205D88D9002A01FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF31A39205D88D9002A01FC /* ViewController.swift */; };
 		FCF31A3D205D88D9002A01FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF31A3B205D88D9002A01FC /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		FC0AAC30205E9EF80039E80B /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		FC0AAC33205EB3A10039E80B /* UserSP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSP.swift; sourceTree = "<group>"; };
 		FC0AAC35205ECC6E0039E80B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FC777E412062C78C001F30D1 /* GenQrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenQrViewController.swift; sourceTree = "<group>"; };
 		FCF31A34205D88D9002A01FC /* LetMeOutKMITL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetMeOutKMITL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF31A37205D88D9002A01FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCF31A39205D88D9002A01FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC777E3F2062C72F001F30D1 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				FC0AAC35205ECC6E0039E80B /* ProfileViewController.swift */,
+			);
+			name = profile;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		FC777E402062C749001F30D1 /* genqr */ = {
+			isa = PBXGroup;
+			children = (
+				FC777E412062C78C001F30D1 /* GenQrViewController.swift */,
+			);
+			path = genqr;
+			sourceTree = "<group>";
+		};
 		FCF31A2B205D88D9002A01FC = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +107,8 @@
 		FCF31A36205D88D9002A01FC /* LetMeOutKMITL */ = {
 			isa = PBXGroup;
 			children = (
+				FC777E402062C749001F30D1 /* genqr */,
+				FC777E3F2062C72F001F30D1 /* profile */,
 				FCF31A37205D88D9002A01FC /* AppDelegate.swift */,
 				FCF31A39205D88D9002A01FC /* ViewController.swift */,
 				FCF31A3B205D88D9002A01FC /* Main.storyboard */,
@@ -98,7 +119,6 @@
 				FC0AAC2E205E804D0039E80B /* LoginViewController.swift */,
 				FC0AAC30205E9EF80039E80B /* MainController.swift */,
 				FC0AAC33205EB3A10039E80B /* UserSP.swift */,
-				FC0AAC35205ECC6E0039E80B /* ProfileViewController.swift */,
 			);
 			path = LetMeOutKMITL;
 			sourceTree = "<group>";
@@ -244,6 +264,7 @@
 			files = (
 				FC0AAC36205ECC6E0039E80B /* ProfileViewController.swift in Sources */,
 				FC0AAC31205E9EF80039E80B /* MainController.swift in Sources */,
+				FC777E422062C78C001F30D1 /* GenQrViewController.swift in Sources */,
 				FC0AAC2F205E804D0039E80B /* LoginViewController.swift in Sources */,
 				FC0AAC34205EB3A10039E80B /* UserSP.swift in Sources */,
 				FCF31A3A205D88D9002A01FC /* ViewController.swift in Sources */,

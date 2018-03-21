@@ -1,13 +1,13 @@
 //
-//  ProfileViewController.swift
+//  GenQrViewController.swift
 //  LetMeOutKMITL
 //
-//  Created by suchaj jongprasit on 3/18/2561 BE.
+//  Created by suchaj jongprasit on 3/22/2561 BE.
 //  Copyright © 2561 km. All rights reserved.
 //
 
 import UIKit
-class ProfileViewController: UIViewController{
+class GenQrViewController: UIViewController{
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +29,8 @@ class ProfileViewController: UIViewController{
             guard let colorFilter = CIFilter(name: "CIFalseColor") else { return nil }
             
             filter.setValue(data, forKey: "inputMessage")
-//            https://www.youtube.com/watch?v=4Zf9dHDJ2yU
-//            https://www.youtube.com/watch?v=Lgs5J7oJtO8
+            //            https://www.youtube.com/watch?v=4Zf9dHDJ2yU
+            //            https://www.youtube.com/watch?v=Lgs5J7oJtO8
             filter.setValue("H", forKey: "inputCorrectionLevel")
             colorFilter.setValue(filter.outputImage, forKey: "inputImage")
             colorFilter.setValue(CIColor(red: 1, green: 1, blue: 1), forKey: "inputColor1") // Background white
@@ -51,3 +51,4 @@ class ProfileViewController: UIViewController{
         return nil
     }
 }
+
