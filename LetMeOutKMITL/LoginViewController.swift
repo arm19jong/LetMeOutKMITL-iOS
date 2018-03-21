@@ -14,9 +14,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if(UserSP.sharedInstance.getUid(userDefaults: UserDefaults.standard) != ""){
-            changViewController()
-        }
+
         // Do any additional setup after loading the view, typically from a nib.
         print("Login Activity")
         GIDSignIn.sharedInstance().uiDelegate = self
@@ -30,7 +28,9 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        changViewController()
+        if(UserSP.sharedInstance.getUid(userDefaults: UserDefaults.standard) != ""){
+            changViewController()
+        }
     
 
     }

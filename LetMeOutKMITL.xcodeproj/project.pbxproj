@@ -11,6 +11,7 @@
 		FC0AAC2F205E804D0039E80B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0AAC2E205E804D0039E80B /* LoginViewController.swift */; };
 		FC0AAC31205E9EF80039E80B /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0AAC30205E9EF80039E80B /* MainController.swift */; };
 		FC0AAC34205EB3A10039E80B /* UserSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0AAC33205EB3A10039E80B /* UserSP.swift */; };
+		FC0AAC36205ECC6E0039E80B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0AAC35205ECC6E0039E80B /* ProfileViewController.swift */; };
 		FCF31A38205D88D9002A01FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF31A37205D88D9002A01FC /* AppDelegate.swift */; };
 		FCF31A3A205D88D9002A01FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF31A39205D88D9002A01FC /* ViewController.swift */; };
 		FCF31A3D205D88D9002A01FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF31A3B205D88D9002A01FC /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		FC0AAC2E205E804D0039E80B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FC0AAC30205E9EF80039E80B /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		FC0AAC33205EB3A10039E80B /* UserSP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSP.swift; sourceTree = "<group>"; };
+		FC0AAC35205ECC6E0039E80B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FCF31A34205D88D9002A01FC /* LetMeOutKMITL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetMeOutKMITL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF31A37205D88D9002A01FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCF31A39205D88D9002A01FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				FC0AAC2E205E804D0039E80B /* LoginViewController.swift */,
 				FC0AAC30205E9EF80039E80B /* MainController.swift */,
 				FC0AAC33205EB3A10039E80B /* UserSP.swift */,
+				FC0AAC35205ECC6E0039E80B /* ProfileViewController.swift */,
 			);
 			path = LetMeOutKMITL;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0AAC36205ECC6E0039E80B /* ProfileViewController.swift in Sources */,
 				FC0AAC31205E9EF80039E80B /* MainController.swift in Sources */,
 				FC0AAC2F205E804D0039E80B /* LoginViewController.swift in Sources */,
 				FC0AAC34205EB3A10039E80B /* UserSP.swift in Sources */,

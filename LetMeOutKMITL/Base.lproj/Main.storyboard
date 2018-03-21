@@ -119,7 +119,7 @@
         <!--PROFILE-->
         <scene sceneID="pJj-aN-FES">
             <objects>
-                <viewController id="xCI-Vo-YEP" sceneMemberID="viewController">
+                <viewController id="xCI-Vo-YEP" customClass="ProfileViewController" customModule="LetMeOutKMITL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Li5-0s-Kxh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,19 +130,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="imageView" image="halo2-720.0001" translatesAutoresizingMaskIntoConstraints="NO" id="mrD-iy-HS5">
+                                <rect key="frame" x="82" y="45" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Ug4-Hv-hbq"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xOG-ly-6y6" firstAttribute="centerY" secondItem="Li5-0s-Kxh" secondAttribute="centerY" id="N5b-Bc-vSp"/>
                             <constraint firstItem="xOG-ly-6y6" firstAttribute="centerX" secondItem="Li5-0s-Kxh" secondAttribute="centerX" id="ZAO-U6-Rny"/>
+                            <constraint firstItem="mrD-iy-HS5" firstAttribute="top" secondItem="wxW-cn-0nR" secondAttribute="top" constant="25" id="bXI-o7-4ND"/>
+                            <constraint firstItem="mrD-iy-HS5" firstAttribute="leading" secondItem="wxW-cn-0nR" secondAttribute="leading" constant="82" id="oZH-XQ-3mH"/>
+                            <constraint firstItem="wxW-cn-0nR" firstAttribute="trailing" secondItem="mrD-iy-HS5" secondAttribute="trailing" constant="53" id="xDu-JF-zBq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wxW-cn-0nR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="PROFILE" id="DSD-1J-1C5"/>
+                    <connections>
+                        <outlet property="imageView" destination="mrD-iy-HS5" id="g6N-7F-nIr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0q-EY-gyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="622" y="116"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="halo2-720.0001" width="720" height="720"/>
+    </resources>
 </document>

@@ -10,6 +10,7 @@ import Foundation
 class MainController:UITabBarController{
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.selectedIndex = 1;
         
     }
     override func didReceiveMemoryWarning() {
