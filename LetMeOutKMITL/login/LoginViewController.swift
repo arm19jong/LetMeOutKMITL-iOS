@@ -61,7 +61,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
 
             print (user?.uid ?? "uid = null")
             UserSP.sharedInstance.setUid(userDefaults: UserDefaults.standard, uid: (user?.uid)!)
-            self.changViewController()
         }
     }
     
