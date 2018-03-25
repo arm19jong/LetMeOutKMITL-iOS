@@ -32,7 +32,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SCAN" id="i4H-AJ-Xd9"/>
+                    <tabBarItem key="tabBarItem" title="SCAN" image="ic_scan" id="i4H-AJ-Xd9">
+                        <inset key="landscapeImageInsets" minX="0.0" minY="-3" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,7 +72,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jID-Xn-Ice"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="GENERATE" id="Izk-pZ-DSB"/>
+                    <tabBarItem key="tabBarItem" title="GENERATE" image="ic_gen2" id="Izk-pZ-DSB"/>
                     <connections>
                         <outlet property="imageView" destination="Lsm-el-X1E" id="OJA-iu-YKr"/>
                     </connections>
@@ -211,7 +213,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wxW-cn-0nR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="PROFILE" id="DSD-1J-1C5"/>
+                    <tabBarItem key="tabBarItem" title="PROFILE" image="ic_person2" id="DSD-1J-1C5"/>
                     <connections>
                         <outlet property="email" destination="v8i-L0-zv5" id="iT3-bq-L7E"/>
                         <outlet property="firstname" destination="zDR-jn-P4J" id="Qcu-Jk-LQz"/>
@@ -221,6 +223,7 @@
                         <outlet property="officephone" destination="swd-dl-BJe" id="3rD-Cj-WYg"/>
                         <outlet property="save" destination="2fg-KJ-uCI" id="SXh-x7-Fsy"/>
                         <outlet property="scrollView" destination="rRX-yk-1lC" id="m9e-FS-gLk"/>
+                        <outlet property="tabBar" destination="DSD-1J-1C5" id="fgg-7c-FSP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0q-EY-gyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -230,5 +233,8 @@
     </scenes>
     <resources>
         <image name="halo2-720.0001" width="720" height="720"/>
+        <image name="ic_gen2" width="25" height="25"/>
+        <image name="ic_person2" width="25" height="25"/>
+        <image name="ic_scan" width="25" height="25"/>
     </resources>
 </document>

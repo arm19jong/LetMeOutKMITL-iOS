@@ -17,6 +17,7 @@ class ProfileViewController: UIViewController{
     @IBOutlet weak var mobilephone2: UITextField!
     @IBOutlet weak var officephone: UITextField!
     @IBOutlet weak var save: UIButton!
+    @IBOutlet weak var tabBar: UITabBarItem!
     let KEY_USER = "Users"
     var user:User = User()
     var uid:String = ""

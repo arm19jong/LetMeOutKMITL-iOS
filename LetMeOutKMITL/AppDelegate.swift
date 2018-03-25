@@ -43,6 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate{
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
+        UITabBar.appearance().tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+//        UITabBar.appearance().unselectedItem?TintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         return true
     }
 
